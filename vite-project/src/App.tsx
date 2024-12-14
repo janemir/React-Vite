@@ -1,30 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
-
-
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import login from "@/pages/login"; // Импорт страницы входа
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-      <div>
-          <Label htmlFor="create_account">Создать аккаунт</Label>
-          <Label htmlFor="email">Почта</Label>
-          <Input />
-          <Label htmlFor="password">Пароль</Label>
-          <Input />
-          <Label htmlFor="repeat_password">Повторите пароль</Label>
-          <Input />
-          <Button>Создать аккаунт</Button>
-          <Label htmlFor="repeat_password">Уже есть аккаунт?</Label>
-          <Label htmlFor="repeat_password">Войти</Label>
-      </div>
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route
+                    path="/"
+                    element={
+                        <div>
+                            <Label htmlFor="create_account">Создать аккаунт</Label>
+                            <Label htmlFor="email">Почта</Label>
+                            <Input />
+                            <Label htmlFor="password">Пароль</Label>
+                            <Input />
+                            <Label htmlFor="repeat_password">Повторите пароль</Label>
+                            <Input />
+                            <Button>Создать аккаунт</Button>
+                            <Label>Уже есть аккаунт?</Label>
+                            {/* Ссылка для перехода на страницу входа */}
+                            <Link to="/login" style={{ color: "#6366F1" }}>Войти</Link>
+                        </div>
+                    }
+                />
+                <Route path="/login" element={<login />} />
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;
