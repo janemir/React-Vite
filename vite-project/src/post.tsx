@@ -22,7 +22,6 @@ export function AppSidebar() {
 function Post() {
     return (
         <div>
-            {/* Закрепленный хедер */}
             <header className="post-header">
                 <div className="post-header-left">
                     <img src="/src/assets/logo.svg" alt="Логотип" className="left-image" />
@@ -32,21 +31,31 @@ function Post() {
                     <img src="/src/assets/avatar.svg" alt="Аватар" className="right-image" />
                 </div>
             </header>
-
-            {/* Основная структура */}
             <div className="main-container">
-                {/* Фиксированный сайдбар */}
                 <aside className="sidebar">
                     <nav>
                         <ul>
-                            <li><div><img src="/src/assets/newspaper.svg" alt="newspaper" className="newspaper-image" /><a href="#item1">Посты</a></div></li>
-                            <li><div><img src="/src/assets/phone.svg" alt="phone" className="phone-image" /><a href="#item2">Контакты</a></div></li>
-                            <li><div><img src="/src/assets/log-out.svg" alt="log-out" className="log-out-image" /><a href="#item3">Выйти</a></div></li>
+                            <li>
+                                <div>
+                                    <img src="/src/assets/newspaper.svg" alt="newspaper" className="newspaper-image" />
+                                    <a href="#item1">Посты</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="/src/assets/phone.svg" alt="phone" className="phone-image" />
+                                    <a href="#item2">Контакты</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="/src/assets/log-out.svg" alt="log-out" className="log-out-image" />
+                                    <a href="#item3">Выйти</a>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                 </aside>
-
-                {/* Центральный контент */}
                 <main className="content-center">
                     <article className="post">
                         <div>
@@ -56,7 +65,10 @@ function Post() {
                         </div>
                         <h2>Заголовок </h2>
                         <section className="post-content"></section>
-                        <p>Повседневная практика показывает, что социально-экономическое развитие способствует подготовке и реализации распределения внутренних резервов и ресурсов. Предварительные выводы неутешительны: перспективное планирование не даёт нам иного выбора, кроме определения экономической целесообразности принимаемых решений.</p>
+                        <p>Повседневная практика показывает, что социально-экономическое развитие
+                            способствует подготовке и реализации распределения внутренних резервов и ресурсов.
+                            Предварительные выводы неутешительны: перспективное планирование не даёт нам иного выбора,
+                            кроме определения экономической целесообразности принимаемых решений.</p>
                         <div><img src="/src/assets/icon buttons.svg" alt="icon buttons" className="icon-buttons-image" /></div>
                     </article>
                     <article className="post">
@@ -67,12 +79,15 @@ function Post() {
                         </div>
                         <h2>Заголовок </h2>
                         <section className="post-content"></section>
-                        <p>Повседневная практика показывает, что социально-экономическое развитие способствует подготовке и реализации распределения внутренних резервов и ресурсов. Предварительные выводы неутешительны: перспективное планирование не даёт нам иного выбора, кроме определения экономической целесообразности принимаемых решений.</p>
-                        <div><img src="/src/assets/icon buttons.svg" alt="icon buttons" className="icon-buttons-image" /></div>
+                        <p>Повседневная практика показывает, что социально-экономическое развитие способствует
+                            подготовке и реализации распределения внутренних резервов и ресурсов. Предварительные
+                            выводы неутешительны: перспективное планирование не даёт нам иного выбора, кроме определения
+                            экономической целесообразности принимаемых решений.</p>
+                        <div>
+                            <img src="/src/assets/icon buttons.svg" alt="icon buttons" className="icon-buttons-image" />
+                        </div>
                     </article>
                 </main>
-
-                {/* Правая картинка */}
                 <div className="content-right">
                     <img src="/src/assets/adv.png" alt="Рекламное изображение" className="right-picture" />
                 </div>
