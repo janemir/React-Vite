@@ -10,5 +10,124 @@ body {
     gap: 16px;
     display: flex;
     flex-direction: column;
+    padding: 16px;
 }
+
+.label-create-account {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0F172A;
+}
+
+.form-input-group {
+    width: 384px;
+    height: auto; /* "Hug" означает адаптацию по контенту */
+    gap: 6px;
+    display: flex;
+    flex-direction: column; /* Размещает метки и инпуты вертикально */
+    opacity: 1; /* Поменял с 0 на 1, чтобы элементы отображались */
+}
+
+.form-input-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0F172A;
+}
+
+.form-input-group input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-input-group input::placeholder {
+    color: #A0AEC0;
+}
+
+.select-role-group {
+    width: 166px;
+    height: auto; /* Hug: высота адаптируется к содержимому */
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    opacity: 1; /* Установил видимость */
+}
+
+.select-role-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0F172A;
+}
+
+.tabs-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.tabs-trigger {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.tabs-trigger:hover {
+    background-color: #F1F5F9;
+}
+
+.tabs-container {
+    width: 166px;
+    height: 42px;
+    padding: 5px 0 0 0;
+    gap: 0px;
+    border-radius: 6px 0 0 0;
+    opacity: 1; /* Установлено для видимости */
+    display: flex;
+    flex-direction: column;
+    background-color: #F8FAFC; /* Для примера */
+}
+
+.tabs-list {
+    display: flex;
+    gap: 0px;
+    justify-content: space-between;
+}
+
+.tabs-trigger {
+    flex: 1;
+    padding: 6px 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0F172A;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.tabs-trigger:hover {
+    background-color: #ffffff;
+}
+
+
 
