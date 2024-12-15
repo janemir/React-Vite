@@ -129,5 +129,35 @@ body {
     background-color: #ffffff;
 }
 
+.auth-container {
+    width: 173px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.auth-text {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.auth-link {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
+    color: #6366F1;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+
+
 
 

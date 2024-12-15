@@ -58,8 +58,12 @@ function Home() {
                     </div>
                 </div>
                 <Button onClick={() => navigate("/post")}>Создать аккаунт</Button>
-                <Label>Уже есть аккаунт?</Label>
-                <Link to="/login" style={{ color: "#6366F1" }}>Войти</Link>
+                <div className="auth-container">
+                    <Label className="auth-text">Уже есть аккаунт?</Label>
+                    <Link to="/login" className="auth-link">
+                        Войти
+                    </Link>
+                </div>
             </div>
 
     );
