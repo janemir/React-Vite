@@ -31,7 +31,7 @@ function Home() {
     return (
 
             <div className="form-container">
-                <Label htmlFor="create_account" className="label-create-account">Создать аккаунт</Label>
+                <h4 htmlFor="create_account" className="label-create-account">Создать аккаунт</h4>
                 <div className="form-input-group">
                     <Label htmlFor="email">Почта</Label>
                     <Input id="email" placeholder="Введите почту" />

@@ -157,7 +157,19 @@ body {
     text-decoration-skip-ink: none;
 }
 
+.login-form {
+    width: 416px; /* Hug (416px) */
+    height: 320px; /* Hug (320px) */
+    padding: 16px; /* Верхний отступ */
+    gap: 16px; /* Расстояние между элементами */
+    border-radius: 12px 0 0 0;
+    opacity: 1; /* Заменить на 0, если должно быть скрыто */
+    display: flex;
+    flex-direction: column;
+}
 
-
-
+.auth-container{
+    width: 216px; /* Hug (416px) */
+    height: 24px;
+}
 
