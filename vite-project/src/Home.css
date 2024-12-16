@@ -187,6 +187,11 @@ body {
     z-index: 1000;
 }
 
+.tag {
+    display: flex;
+    flex-direction: row;
+}
+
 .post-header-left img{
     display: flex;
     height: 20px;

@@ -8,7 +8,7 @@ function Login() {
 
     return (
         <div className="login-form">
-            <h4 htmlFor="login" className="label-create-account">Войти</h4>
+            <h4 className="label-create-account">Войти</h4>
             <Label htmlFor="email">Почта</Label>
             <Input id="email" placeholder="Введите почту" />
             <Label htmlFor="password">Пароль</Label>

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import Login from "@/login"; // Импорт страницы входа
 import Post from "@/post"; // Импорт страницы постов
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import "./Home.css";
 
 
@@ -31,7 +31,7 @@ function Home() {
     return (
 
             <div className="form-container">
-                <h4 htmlFor="create_account" className="label-create-account">Создать аккаунт</h4>
+                <h4  className="label-create-account">Создать аккаунт</h4>
                 <div className="form-input-group">
                     <Label htmlFor="email">Почта</Label>
                     <Input id="email" placeholder="Введите почту" />

@@ -22,7 +22,7 @@ export function AppSidebar() {
 function Post() {
     return (
         <div>
-            <header className="post-header">
+            <header className="post-header ">
                 <div className="post-header-left">
                     <img src="/src/assets/logo.svg" alt="Логотип" className="left-image" />
                 </div>
@@ -58,10 +58,12 @@ function Post() {
                 </aside>
                 <main className="content-center">
                     <article className="post">
-                        <div>
+                        <div className="tag">
                             <img src="/src/assets/avatar.svg" alt="Аватар" className="right-image" />
-                            <p>pochta@gmail.com</p>
-                            <p>31 октября</p>
+                            <div>
+                                <p>pochta@gmail.com</p>
+                                <p>31 октября</p>
+                            </div>
                         </div>
                         <h2>Заголовок </h2>
                         <section className="post-content"></section>
@@ -74,8 +76,10 @@ function Post() {
                     <article className="post">
                         <div>
                             <img src="/src/assets/avatar.svg" alt="Аватар" className="right-image" />
-                            <p>pochta@gmail.com</p>
-                            <p>31 октября</p>
+                            <div>
+                                <p>pochta@gmail.com</p>
+                                <p>31 октября</p>
+                            </div>
                         </div>
                         <h2>Заголовок </h2>
                         <section className="post-content"></section>
